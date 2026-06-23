@@ -1,0 +1,177 @@
+backend:
+  name: github
+  repo: press-lab/susan-jarvie-website
+  branch: main
+  base_url: https://sveltia-cms-auth.YOUR_WORKER.workers.dev  # filled in during setup (see CLOUDFLARE_SETUP.md Step 5)
+
+# Where uploaded images are stored in the repo
+media_folder: images
+public_folder: /images
+
+# Tell Decap to treat these as raw JSON files
+# Each "file" maps to one page's data file
+collections:
+
+  - name: pages
+    label: Pages
+    files:
+
+      # ── Home ──────────────────────────────────────────────────
+      - name: home
+        label: Home Page
+        file: data/home.json
+        format: json
+        fields:
+          - { name: hero_tagline,    label: "Hero — Main Headline",      widget: string }
+          - { name: hero_sub,        label: "Hero — Subheading",         widget: text }
+          - { name: hero_cta_text,   label: "Hero — Button 1 Text",      widget: string }
+          - { name: hero_cta_url,    label: "Hero — Button 1 Link",      widget: string }
+          - { name: hero_cta2_text,  label: "Hero — Button 2 Text",      widget: string }
+          - { name: hero_cta2_url,   label: "Hero — Button 2 Link",      widget: string }
+          - { name: offerings_heading, label: "Offerings Section — Heading", widget: string }
+          - { name: offerings_sub,     label: "Offerings Section — Subheading", widget: text }
+          - name: offerings
+            label: "Offering Cards (3 cards)"
+            widget: list
+            fields:
+              - { name: eyebrow,    label: "Small Label (e.g. Spring 2026)", widget: string }
+              - { name: title,      label: Title,     widget: string }
+              - { name: body,       label: Description, widget: text }
+              - { name: link_text,  label: "Button Text", widget: string }
+              - { name: link_url,   label: "Button Link", widget: string }
+          - { name: about_heading,  label: "About Strip — Heading",  widget: string }
+          - { name: about_body,     label: "About Strip — Body",     widget: text }
+          - { name: about_cta_text, label: "About Strip — Button Text", widget: string }
+          - { name: about_cta_url,  label: "About Strip — Button Link", widget: string }
+          - { name: newsletter_heading, label: "Newsletter — Heading", widget: string }
+          - { name: newsletter_sub,     label: "Newsletter — Subheading", widget: text }
+
+      # ── About ─────────────────────────────────────────────────
+      - name: about
+        label: About Page
+        file: data/about.json
+        format: json
+        fields:
+          - { name: page_title, label: "Page Title",    widget: string }
+          - { name: page_sub,   label: "Page Subtitle", widget: string }
+          - { name: bio_heading, label: "Bio — Heading", widget: string }
+          - { name: bio_tagline, label: "Bio — Tagline (pull quote)", widget: string }
+          - { name: bio_body,    label: "Bio — Body Text (HTML allowed)", widget: text }
+          - name: credentials
+            label: "Credential Badges"
+            widget: list
+            fields:
+              - { name: label, label: "Label (e.g. Certification)", widget: string }
+              - { name: value, label: "Value (e.g. E-RYT500)",      widget: string }
+          - { name: teaching_heading, label: "Teaching Approach — Heading", widget: string }
+          - { name: teaching_body,    label: "Teaching Approach — Body (HTML allowed)", widget: text }
+          - { name: services_heading, label: "Services Section — Heading", widget: string }
+          - name: services
+            label: "Service Items"
+            widget: list
+            fields:
+              - { name: title, label: Title,       widget: string }
+              - { name: body,  label: Description, widget: text }
+          - { name: travel_heading, label: "Travel Section — Heading", widget: string }
+          - { name: travel_body,    label: "Travel Section — Body",    widget: text }
+
+      # ── Schedule ───────────────────────────────────────────────
+      - name: schedule
+        label: Schedule Page
+        file: data/schedule.json
+        format: json
+        fields:
+          - { name: page_title, label: "Page Title",    widget: string }
+          - { name: page_sub,   label: "Page Subtitle", widget: string }
+          - { name: notice,     label: "Notice Banner (leave blank to hide)", widget: string, required: false }
+          - { name: intro,      label: "Intro Paragraph", widget: text }
+          - { name: mcc_link,   label: "Mesa Community College Registration Link", widget: string }
+          - name: classes
+            label: "Classes"
+            widget: list
+            fields:
+              - { name: location, label: "Location Name", widget: string }
+              - { name: address,  label: "Address",        widget: string, required: false }
+              - { name: name,     label: "Class Name",     widget: string }
+              - { name: day,      label: "Day(s)",         widget: string }
+              - { name: time,     label: "Time",           widget: string }
+              - { name: dates,    label: "Dates / Season", widget: string }
+              - { name: price,    label: "Price",          widget: string }
+              - { name: notes,    label: "Notes (optional)", widget: string, required: false }
+          - { name: descriptions_heading, label: "Class Descriptions — Heading", widget: string }
+          - { name: hatha_description,    label: "Hatha Flow — Description",     widget: text }
+          - { name: gentle_description,   label: "Gentle Yoga — Description",    widget: text }
+
+      # ── Classes Online ─────────────────────────────────────────
+      - name: classes_online
+        label: Classes Online Page
+        file: data/classes-online.json
+        format: json
+        fields:
+          - { name: page_title, label: "Page Title",    widget: string }
+          - { name: page_sub,   label: "Page Subtitle", widget: string }
+          - { name: intro,      label: "Intro Paragraph", widget: text }
+          - { name: option1_heading,  label: "Option 1 — Heading",      widget: string }
+          - { name: option1_body,     label: "Option 1 — Description",  widget: text }
+          - { name: option1_cta_text, label: "Option 1 — Button Text",  widget: string }
+          - { name: option1_cta_url,  label: "Option 1 — Button Link",  widget: string }
+          - { name: option1_price,    label: "Option 1 — Price",        widget: string }
+          - { name: option2_heading,  label: "Option 2 — Heading",      widget: string }
+          - { name: option2_body,     label: "Option 2 — Description",  widget: text }
+          - { name: option2_cta_text, label: "Option 2 — Button Text",  widget: string }
+          - { name: option2_cta_url,  label: "Option 2 — Button Link",  widget: string }
+          - { name: option2_price,    label: "Option 2 — Price",        widget: string }
+          - { name: cta_heading, label: "Bottom CTA — Heading", widget: string }
+          - { name: cta_body,    label: "Bottom CTA — Body",    widget: text }
+
+      # ── Work with Me ───────────────────────────────────────────
+      - name: work_with_me
+        label: Work with Me Page
+        file: data/work-with-me.json
+        format: json
+        fields:
+          - { name: page_title, label: "Page Title",    widget: string }
+          - { name: page_sub,   label: "Page Subtitle", widget: string }
+          - { name: private_heading,          label: "Private Sessions — Heading",         widget: string }
+          - { name: private_body,             label: "Private Sessions — Body (HTML ok)",  widget: text }
+          - { name: private_includes_heading, label: "Private Sessions — Includes Heading", widget: string }
+          - name: private_includes
+            label: "Private Sessions — Includes List"
+            widget: list
+            field: { name: "", label: "Item", widget: string }
+          - { name: private_details, label: "Private Sessions — Session Details", widget: string }
+          - { name: events_heading,  label: "Group Events — Heading",             widget: string }
+          - { name: events_body,     label: "Group Events — Body (HTML ok)",      widget: text }
+          - { name: services_heading, label: "Writing Services — Heading", widget: string }
+          - { name: services_body,    label: "Writing Services — Intro",   widget: string }
+          - name: services
+            label: "Writing Service Items"
+            widget: list
+            fields:
+              - { name: title, label: Title,       widget: string }
+              - { name: body,  label: Description, widget: text }
+          - { name: contact_heading, label: "CTA — Heading",      widget: string }
+          - { name: contact_body,    label: "CTA — Body",         widget: text }
+          - { name: phone,           label: "Phone Number",       widget: string }
+          - { name: cta_text,        label: "CTA — Button Text",  widget: string }
+          - { name: cta_url,         label: "CTA — Button Link",  widget: string }
+
+      # ── Contact ────────────────────────────────────────────────
+      - name: contact
+        label: Contact Page
+        file: data/contact.json
+        format: json
+        fields:
+          - { name: page_title,  label: "Page Title",    widget: string }
+          - { name: page_sub,    label: "Page Subtitle", widget: string }
+          - { name: greeting,    label: "Greeting Text", widget: text }
+          - { name: phone,       label: "Phone Number",  widget: string }
+          - { name: location,    label: "Location",      widget: string }
+          - { name: facebook_url,    label: "Facebook URL",    widget: string }
+          - { name: facebook_handle, label: "Facebook Handle", widget: string }
+          - { name: twitter_url,     label: "Twitter URL",     widget: string }
+          - { name: twitter_handle,  label: "Twitter Handle",  widget: string }
+          - { name: newsletter_heading, label: "Newsletter — Heading", widget: string }
+          - { name: newsletter_body,    label: "Newsletter — Body",    widget: text }
+          - { name: form_heading,       label: "Form — Heading",       widget: string }
+          - { name: formspree_endpoint, label: "Formspree Endpoint URL (from formspree.io)", widget: string }

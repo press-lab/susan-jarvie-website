@@ -1,0 +1,47 @@
+{
+  "page_title": "Class Schedule",
+  "page_sub": "Weekly yoga classes in Mesa, Arizona — find the right fit for you.",
+
+  "notice": "Spring classes begin January 18! Mesa Community College fall semester begins September 9, 2025.",
+
+  "intro": "All classes are beginner-friendly and suitable for a wide range of ages and fitness levels. Recorded classes are also available so you can practice on your own time.",
+
+  "mcc_link": "https://www.mesacc.edu/schedule/search",
+
+  "classes": [
+    {
+      "location": "Mesa Community College — Dobson Campus",
+      "address": "1833 W. Southern Ave., Mesa, AZ 85202",
+      "name": "Gentle / Restorative Yoga",
+      "day": "Tuesday & Thursday",
+      "time": "8:00 – 8:50 AM",
+      "dates": "Jan–May & Aug–Dec",
+      "price": "Under $100/semester",
+      "notes": "≈ $3/class · Online & recorded available"
+    },
+    {
+      "location": "Mesa Community College — Red Mountain Campus",
+      "address": "7710 E. McKellips Rd., Mesa, AZ 85207",
+      "name": "Hatha Flow",
+      "day": "Tuesday & Thursday",
+      "time": "4:30 – 5:20 PM",
+      "dates": "Jan–May & Aug–Dec",
+      "price": "Under $100/semester",
+      "notes": "≈ $3/class · Online & recorded available"
+    },
+    {
+      "location": "Sunland Springs Village",
+      "address": "2233 S. Springwood Blvd, Mesa, AZ 85209",
+      "name": "Gentle Yoga",
+      "day": "Wednesday",
+      "time": "8:45 – 10:00 AM",
+      "dates": "Year-Round",
+      "price": "$5/class",
+      "notes": "Residents only"
+    }
+  ],
+
+  "descriptions_heading": "About the Classes",
+  "hatha_description": "Hatha Yoga promotes overall health by strengthening muscles and stimulating the glands and organs. Classes include basic postures, breathing techniques, and relaxation.",
+  "gentle_description": "Gentle yoga is a slower, more accessible way to practice, appropriate for all ages and fitness levels. A wonderful entry point into yoga."
+}
