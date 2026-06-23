@@ -48,8 +48,8 @@
 
   <section class="page-hero">
     <div class="container">
-      <h1 data-field="page_title">Let's Get Together</h1>
-      <p data-field="page_sub">I'd love to hear from you — questions, hellos, and booking inquiries all welcome.</p>
+      <h1>Let's Get Together</h1>
+      <p>I'd love to hear from you — questions, hellos, and booking inquiries all welcome.</p>
     </div>
   </section>
 
@@ -57,35 +57,34 @@
     <div class="container">
       <div class="contact-wrap">
 
-        <!-- Info -->
         <div class="contact-info">
           <h3>Get in Touch</h3>
-          <p data-field="greeting"></p>
+          <p>If you have any questions or just want to say hello, I would love to hear from you!</p>
 
           <hr class="divider">
 
           <div class="contact-detail">
             <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-            <div><strong>Phone</strong><a href="tel:+14802665655" data-field="phone">480-266-5655</a></div>
+            <div><strong>Phone</strong><a href="tel:+14802665655">480-266-5655</a></div>
           </div>
 
           <div class="contact-detail">
             <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            <div><strong>Location</strong><span data-field="location">Mesa, Arizona</span></div>
+            <div><strong>Location</strong><span>Mesa, Arizona</span></div>
           </div>
 
           <div class="contact-detail">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            <div><strong>Facebook</strong><a href="#" data-href="facebook_url" data-field="facebook_handle" target="_blank" rel="noopener">yogawithsusanjarvie</a></div>
+            <div><strong>Facebook</strong><a href="https://www.facebook.com/yogawithsusanjarvie" target="_blank" rel="noopener">yogawithsusanjarvie</a></div>
           </div>
 
-          <div style="margin-top:1.5rem"><p data-field="newsletter_body"></p></div>
+          <div style="margin-top:1.5rem"><p>Join me on Facebook for daily updates on all things yoga, or send a message below to be the first to know about new classes and events.</p></div>
 
           <div class="social-links">
-            <a href="#" data-href="facebook_url" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+            <a href="https://www.facebook.com/yogawithsusanjarvie" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
-            <a href="#" data-href="twitter_url" class="social-link" aria-label="Twitter" target="_blank" rel="noopener">
+            <a href="https://www.twitter.com/yogasusanjarvie" class="social-link" aria-label="Twitter" target="_blank" rel="noopener">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             </a>
             <a href="https://www.linkedin.com" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
@@ -97,12 +96,11 @@
           </div>
         </div>
 
-        <!-- Form -->
         <div class="form-card">
-          <h3 data-field="form_heading">Send a Message</h3>
+          <h3>Send a Message</h3>
           <p style="color:var(--body);font-size:.9rem;margin-bottom:1.5rem">I'll get back to you as soon as I can!</p>
 
-          <form id="contact-form" method="POST">
+          <form id="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
             <div class="form-row">
               <div class="form-group">
                 <label for="first-name">First Name *</label>
@@ -143,7 +141,7 @@
           </div>
 
           <div id="form-error" role="alert" style="display:none;margin-top:1rem" class="notice notice--warn">
-            Something went wrong. Please try again or email me directly.
+            Something went wrong. Please try again or call me at 480-266-5655.
           </div>
         </div>
 
@@ -194,33 +192,24 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    fetch('data/contact.json')
-      .then(r => r.json())
-      .then(data => {
-        const form = document.getElementById('contact-form');
-        if (data.formspree_endpoint && !data.formspree_endpoint.includes('YOUR_FORM_ID')) {
-          form.action = data.formspree_endpoint;
-        }
-        form.addEventListener('submit', async e => {
-          e.preventDefault();
-          const endpoint = form.getAttribute('action');
-          if (!endpoint || endpoint.includes('YOUR_FORM_ID')) {
-            const err = document.getElementById('form-error');
-            err.style.display = 'block';
-            err.textContent = 'Contact form not yet configured. Please email Susan directly or call 480-266-5655.';
-            return;
-          }
-          try {
-            const res = await fetch(endpoint, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
-            if (res.ok) {
-              form.style.display = 'none';
-              document.getElementById('form-success').style.display = 'block';
-            } else { throw new Error(); }
-          } catch { document.getElementById('form-error').style.display = 'block'; }
-        });
-      });
-
-    loadContent('data/contact.json');
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = this;
+      const endpoint = form.getAttribute('action');
+      if (!endpoint || endpoint.includes('YOUR_FORM_ID')) {
+        const err = document.getElementById('form-error');
+        err.style.display = 'block';
+        err.textContent = 'Contact form not yet configured. Please call Susan at 480-266-5655.';
+        return;
+      }
+      try {
+        const res = await fetch(endpoint, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+        if (res.ok) {
+          form.style.display = 'none';
+          document.getElementById('form-success').style.display = 'block';
+        } else { throw new Error(); }
+      } catch { document.getElementById('form-error').style.display = 'block'; }
+    });
   </script>
 </body>
 </html>

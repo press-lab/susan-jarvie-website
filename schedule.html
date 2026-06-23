@@ -48,25 +48,94 @@
 
   <section class="page-hero">
     <div class="container">
-      <h1 data-field="page_title">Class Schedule</h1>
-      <p data-field="page_sub">Weekly yoga classes in Mesa, Arizona — find the right fit for you.</p>
+      <h1>Class Schedule</h1>
+      <p>Weekly yoga classes in Mesa, Arizona — find the right fit for you.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
 
-      <div class="notice notice--warn" data-field="notice" style="margin-bottom:2rem">
-        Spring classes begin January 18!
+      <div class="notice notice--warn" style="margin-bottom:2rem">
+        Spring classes begin January 18! Mesa Community College fall semester begins September 9, 2025.
       </div>
 
-      <p class="section-intro" data-field="intro" style="margin-bottom:2.5rem"></p>
+      <p class="section-intro" style="margin-bottom:2.5rem">All classes are beginner-friendly and suitable for a wide range of ages and fitness levels. Recorded classes are also available so you can practice on your own time.</p>
 
-      <!-- Schedule rendered by content.js renderSchedule() -->
-      <div data-schedule></div>
+      <div class="schedule-group">
+        <div class="schedule-group__header">
+          Mesa Community College — Dobson Campus
+          <div class="schedule-group__address">1833 W. Southern Ave., Mesa, AZ 85202</div>
+        </div>
+        <table class="schedule-table">
+          <thead>
+            <tr><th>Class</th><th>Day</th><th>Time</th><th>Dates</th><th>Price</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Class">
+                <span class="class-name">Gentle / Restorative Yoga</span>
+                <div class="class-note">≈ $3/class · Online &amp; recorded available</div>
+              </td>
+              <td data-label="Day">Tuesday &amp; Thursday</td>
+              <td data-label="Time">8:00 – 8:50 AM</td>
+              <td data-label="Dates">Jan–May &amp; Aug–Dec</td>
+              <td data-label="Price"><span class="class-price">Under $100/semester</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="schedule-group">
+        <div class="schedule-group__header">
+          Mesa Community College — Red Mountain Campus
+          <div class="schedule-group__address">7710 E. McKellips Rd., Mesa, AZ 85207</div>
+        </div>
+        <table class="schedule-table">
+          <thead>
+            <tr><th>Class</th><th>Day</th><th>Time</th><th>Dates</th><th>Price</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Class">
+                <span class="class-name">Hatha Flow</span>
+                <div class="class-note">≈ $3/class · Online &amp; recorded available</div>
+              </td>
+              <td data-label="Day">Tuesday &amp; Thursday</td>
+              <td data-label="Time">4:30 – 5:20 PM</td>
+              <td data-label="Dates">Jan–May &amp; Aug–Dec</td>
+              <td data-label="Price"><span class="class-price">Under $100/semester</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="schedule-group">
+        <div class="schedule-group__header">
+          Sunland Springs Village
+          <div class="schedule-group__address">2233 S. Springwood Blvd, Mesa, AZ 85209</div>
+        </div>
+        <table class="schedule-table">
+          <thead>
+            <tr><th>Class</th><th>Day</th><th>Time</th><th>Dates</th><th>Price</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Class">
+                <span class="class-name">Gentle Yoga</span>
+                <div class="class-note">Residents only</div>
+              </td>
+              <td data-label="Day">Wednesday</td>
+              <td data-label="Time">8:45 – 10:00 AM</td>
+              <td data-label="Dates">Year-Round</td>
+              <td data-label="Price"><span class="class-price">$5/class</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div class="text-center" style="margin-top:2rem">
-        <a href="#" class="btn btn-primary" data-mcc-link target="_blank" rel="noopener">
+        <a href="https://www.mesacc.edu/schedule/search" class="btn btn-primary" target="_blank" rel="noopener">
           Register at Mesa Community College
         </a>
       </div>
@@ -74,24 +143,23 @@
     </div>
   </section>
 
-  <!-- Class descriptions -->
   <section class="section section--soft">
     <div class="container">
       <span class="eyebrow">About the Classes</span>
-      <h2 class="section-heading" data-field="descriptions_heading">About the Classes</h2>
+      <h2 class="section-heading">About the Classes</h2>
       <div class="cards" style="margin-top:1.5rem">
         <article class="card">
           <div class="card__accent"></div>
           <div class="card__body">
             <h3>Hatha Flow</h3>
-            <p data-field="hatha_description"></p>
+            <p>Hatha Yoga promotes overall health by strengthening muscles and stimulating the glands and organs. Classes include basic postures, breathing techniques, and relaxation.</p>
           </div>
         </article>
         <article class="card">
           <div class="card__accent"></div>
           <div class="card__body">
             <h3>Gentle / Restorative Yoga</h3>
-            <p data-field="gentle_description"></p>
+            <p>Gentle yoga is a slower, more accessible way to practice, appropriate for all ages and fitness levels. A wonderful entry point into yoga.</p>
           </div>
         </article>
         <article class="card">
@@ -106,7 +174,6 @@
     </div>
   </section>
 
-  <!-- Private CTA -->
   <section class="section section--dark">
     <div class="container text-center">
       <h2>Need Something More Personal?</h2>
@@ -155,9 +222,6 @@
   </footer>
 
   <script src="js/content.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    loadContent('data/schedule.json');
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

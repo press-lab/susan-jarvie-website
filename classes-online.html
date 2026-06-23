@@ -48,30 +48,28 @@
 
   <section class="page-hero">
     <div class="container">
-      <h1 data-field="page_title">Classes Online</h1>
-      <p data-field="page_sub">Practice yoga with me from anywhere — two easy ways to join.</p>
+      <h1>Classes Online</h1>
+      <p>Practice yoga with me from anywhere — two easy ways to join.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <p class="section-intro" data-field="intro" style="margin-bottom:3rem"></p>
+      <p class="section-intro" style="margin-bottom:3rem">Whether you prefer a structured course with assignments and community, or the freedom to drop in whenever you want, I have an option for you.</p>
 
       <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
 
-        <!-- Option 1: MCC -->
         <article class="card">
           <img class="card__img" src="images/mcc-yoga.png" alt="Group yoga class at Mesa Community College" loading="lazy" decoding="async">
           <div class="card__body">
             <span class="eyebrow">Structured Course</span>
-            <h3 data-field="option1_heading">Mesa Community College — Online &amp; Recorded</h3>
-            <p data-field="option1_body"></p>
-            <div class="price-tag"><strong>Cost:</strong> <span data-field="option1_price"></span></div>
-            <a href="#" class="btn btn-primary" data-field="option1_cta_text" data-href="option1_cta_url" target="_blank" rel="noopener">Register at mesacc.edu</a>
+            <h3>Mesa Community College — Online &amp; Recorded</h3>
+            <p>Register through Mesa Community College for classes that meet online and are recorded for you to revisit anytime. A two-credit introductory course covering yoga history, philosophy, postures, and breath work.</p>
+            <div class="price-tag"><strong>Cost:</strong> Under $100/semester (≈ $3/class)</div>
+            <a href="https://www.mesacc.edu/schedule/search" class="btn btn-primary" target="_blank" rel="noopener">Register at mesacc.edu</a>
           </div>
         </article>
 
-        <!-- Option 2: YouTube -->
         <article class="card">
           <div class="card__accent" style="background:#cc0000"></div>
           <div class="card__body">
@@ -79,10 +77,10 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             </div>
             <span class="eyebrow">Free · On Demand</span>
-            <h3 data-field="option2_heading">YouTube — Free Classes</h3>
-            <p data-field="option2_body"></p>
-            <div class="price-tag"><strong>Cost:</strong> <span data-field="option2_price"></span></div>
-            <a href="#" class="btn btn-outline" data-field="option2_cta_text" data-href="option2_cta_url" target="_blank" rel="noopener">Subscribe on YouTube</a>
+            <h3>YouTube — Free Classes</h3>
+            <p>Actual classes filmed on location with students, so you get the real experience of being in the room. Subscribe so you never miss a new class — and remember: the more you watch and comment, the bigger our community grows!</p>
+            <div class="price-tag"><strong>Cost:</strong> Free</div>
+            <a href="https://www.youtube.com/@yogawithsusanjarvie" class="btn btn-outline" target="_blank" rel="noopener">Subscribe on YouTube</a>
           </div>
         </article>
 
@@ -90,12 +88,11 @@
     </div>
   </section>
 
-  <!-- You Matter CTA -->
   <section class="section section--soft">
     <div class="container measure-center text-center">
       <span class="eyebrow">Community</span>
-      <h2 class="section-heading" data-field="cta_heading">You Matter</h2>
-      <p data-field="cta_body"></p>
+      <h2 class="section-heading">You Matter</h2>
+      <p>I hope you enjoy the classes. Feel free to leave a comment, hit thumbs up, or reach out to me directly — your presence in this community means everything.</p>
       <div class="btn-group centered" style="margin-top:1.5rem">
         <a href="contact.html" class="btn btn-primary">Say Hello</a>
       </div>
@@ -142,9 +139,6 @@
   </footer>
 
   <script src="js/content.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    loadContent('data/classes-online.json');
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

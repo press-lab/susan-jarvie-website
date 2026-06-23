@@ -49,25 +49,33 @@
 
   <section class="page-hero">
     <div class="container">
-      <h1 data-field="page_title">About Susan</h1>
-      <p data-field="page_sub">E-RYT500 Yoga Instructor · Mesa, Arizona</p>
+      <h1>About Susan</h1>
+      <p>E-RYT500 Yoga Instructor &middot; Mesa, Arizona</p>
     </div>
   </section>
 
-  <!-- Bio -->
   <section class="section">
     <div class="container">
       <div class="band">
         <div>
           <span class="eyebrow">About</span>
-          <h2 class="section-heading" data-field="bio_heading">Join me on your yoga journey</h2>
-          <div class="pull-quote"><p data-field="bio_tagline">you matter!</p></div>
-          <div data-field="bio_body"></div>
+          <h2 class="section-heading">Join me on your yoga journey</h2>
+          <div class="pull-quote"><p>you matter!</p></div>
+          <p>I'm a registered yoga instructor (E-RYT500, Yoga Alliance, since 2006) and adjunct faculty member in the Exercise Science department at Mesa Community College. I've led group fitness yoga sessions since 2008, and my practice spans over two decades.</p>
+          <p style="margin-top:1rem">My teaching draws from physical alignment, mindful sequencing, and breath awareness — bringing together postures, breathing techniques, meditation, and visualization so each class nourishes body and mind.</p>
 
-          <div class="creds" data-list="credentials">
-            <div class="cred" data-template>
-              <span class="cred__label" data-field="label"></span>
-              <span class="cred__value" data-field="value"></span>
+          <div class="creds">
+            <div class="cred">
+              <span class="cred__label">Certification</span>
+              <span class="cred__value">E-RYT500</span>
+            </div>
+            <div class="cred">
+              <span class="cred__label">Registered Since</span>
+              <span class="cred__value">2006</span>
+            </div>
+            <div class="cred">
+              <span class="cred__label">Teaching Since</span>
+              <span class="cred__value">2008</span>
             </div>
           </div>
 
@@ -81,41 +89,56 @@
     </div>
   </section>
 
-  <!-- Teaching approach -->
   <section class="section section--soft">
     <div class="container">
       <div class="band flip">
         <div>
           <span class="eyebrow">Philosophy</span>
-          <h2 class="section-heading" data-field="teaching_heading">My Teaching Approach</h2>
-          <div data-field="teaching_body"></div>
+          <h2 class="section-heading">My Teaching Approach</h2>
+          <p>Classes are designed to be accessible to all levels and ages. Whether you're stepping onto a mat for the first time or deepening a long-standing practice, I meet you where you are. Every session incorporates:</p>
+          <ul style="list-style:none;padding:0;margin-top:1rem">
+            <li>✦ Physical alignment and posture guidance</li>
+            <li>✦ Mindful breathing and pranayama</li>
+            <li>✦ Meditation and visualization</li>
+            <li>✦ A warm, welcoming community</li>
+          </ul>
         </div>
         <img class="feature-img feature-img--wide" src="images/yoga-action-1.jpg" alt="Susan holding a yoga pose at sunset" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
 
-  <!-- Services -->
   <section class="section">
     <div class="container">
       <span class="eyebrow">What I Offer</span>
-      <h2 class="section-heading" data-field="services_heading">What I Offer</h2>
-      <div class="services" data-list="services">
-        <article class="service" data-template>
-          <h3 data-field="title"></h3>
-          <p data-field="body"></p>
+      <h2 class="section-heading">What I Offer</h2>
+      <div class="services">
+        <article class="service">
+          <h3>Weekly Classes</h3>
+          <p>Group classes at Mesa Community College and Sunland Springs Village — beginner-friendly and open to all levels.</p>
+        </article>
+        <article class="service">
+          <h3>Private Sessions</h3>
+          <p>One-on-one or small group sessions tailored to your individual needs, goals, and pace.</p>
+        </article>
+        <article class="service">
+          <h3>Online Yoga</h3>
+          <p>Recorded and live online sessions through Mesa Community College and YouTube.</p>
+        </article>
+        <article class="service">
+          <h3>Workshops &amp; Events</h3>
+          <p>Occasional specialty workshops, girls' nights in, birthday parties, bridal showers, and more.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Travel gallery -->
   <section class="section section--soft">
     <div class="container">
       <div class="measure-center text-center">
         <span class="eyebrow">Yoga Everywhere</span>
-        <h2 class="section-heading" data-field="travel_heading">Living My Yoga as I Travel</h2>
-        <p data-field="travel_body"></p>
+        <h2 class="section-heading">Living My Yoga as I Travel</h2>
+        <p>I believe yoga is a practice you carry with you everywhere. Over the years I've photographed yoga poses at incredible locations — Australia, Egypt, China, Ireland, Canada, and throughout the United States.</p>
       </div>
       <div class="gallery">
         <figure><img src="images/travel-05.jpg" alt="Yoga pose in front of the pyramids in Egypt" loading="lazy" decoding="async"><figcaption>Egypt</figcaption></figure>
@@ -133,7 +156,6 @@
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="section section--dark">
     <div class="container text-center">
       <h2>Ready to Practice?</h2>
@@ -185,9 +207,6 @@
   </footer>
 
   <script src="js/content.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    loadContent('data/about.json');
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
