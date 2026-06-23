@@ -2,15 +2,17 @@
   "hero_tagline": "Join me on your journey of yoga health + wellness",
   "hero_sub": "Weekly classes, private sessions, and online yoga — in Mesa, Arizona and beyond.",
   "hero_cta_text": "View Schedule",
-  "hero_cta_url": "/schedule.html",
+  "hero_cta_url": "schedule.html",
   "hero_cta2_text": "Work with Me",
-  "hero_cta2_url": "/work-with-me.html",
+  "hero_cta2_url": "work-with-me.html",
 
   "offerings_heading": "Ways to Practice",
   "offerings_sub": "Whether you're brand new to yoga or deepening an existing practice, there's a place for you here.",
 
   "offerings": [
     {
+      "image": "images/mcc-yoga.png",
+      "image_alt": "Group yoga class at Mesa Community College",
       "eyebrow": "Spring 2026",
       "title": "Mesa Community College",
       "body": "Two-credit introductory courses covering yoga history, philosophy, postures, and breath work — online and recorded so you can practice on your schedule.",
@@ -18,25 +20,29 @@
       "link_url": "https://www.mesacc.edu/schedule/search"
     },
     {
+      "image": "images/pool-1.jpg",
+      "image_alt": "Pool yoga plank on a Float Into Fitness board",
       "eyebrow": "Summer Exclusive",
       "title": "Float Into Fitness",
       "body": "Pool yoga sessions combining the foundations of yoga with the refreshing ambiance of the water. Perfect for building flexibility, balance, and strength in a joyful setting.",
       "link_text": "Learn more",
-      "link_url": "/work-with-me.html"
+      "link_url": "work-with-me.html"
     },
     {
+      "image": "images/susan-pool-yoga.png",
+      "image_alt": "Susan in a seated meditation pose",
       "eyebrow": "Year-Round",
       "title": "Current Classes",
       "body": "Gentle Yoga at Sunland Springs Village — Wednesdays 8:45–10am. Designed for all fitness levels. Only $5 per class.",
       "link_text": "See full schedule",
-      "link_url": "/schedule.html"
+      "link_url": "schedule.html"
     }
   ],
 
   "about_heading": "You Matter",
   "about_body": "I'm an E-RYT500 registered yoga instructor and adjunct faculty member at Mesa Community College. I've been guiding students through yoga since 2008 — and my mission hasn't changed: to make yoga accessible, meaningful, and joyful for everyone who walks through my door (or logs on!).",
   "about_cta_text": "Learn about Susan",
-  "about_cta_url": "/about.html",
+  "about_cta_url": "about.html",
 
   "newsletter_heading": "You Matter",
   "newsletter_sub": "Be the first to know what's going on — new classes, workshops, and all things yoga."

@@ -34,6 +34,8 @@ collections:
             label: "Offering Cards (3 cards)"
             widget: list
             fields:
+              - { name: image,      label: "Card Image", widget: image }
+              - { name: image_alt,  label: "Image Alt Text (for accessibility)", widget: string }
               - { name: eyebrow,    label: "Small Label (e.g. Spring 2026)", widget: string }
               - { name: title,      label: Title,     widget: string }
               - { name: body,       label: Description, widget: text }

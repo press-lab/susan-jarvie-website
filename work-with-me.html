@@ -8,6 +8,7 @@
   <meta name="theme-color" content="#455968">
   <meta property="og:title" content="Work with Me · Yoga with Susan Jarvie">
   <meta property="og:description" content="Private sessions, group events, and creative services.">
+  <meta property="og:image" content="images/susan-pool-yoga.png">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
@@ -17,9 +18,8 @@
 
   <header class="navbar">
     <div class="container navbar__inner">
-      <a href="index.html" class="navbar__brand" aria-label="Susan Jarvie — Yoga and Wellness, home">
-        <span class="navbar__brand-name">Susan Jarvie</span>
-        <span class="navbar__brand-sub">Yoga &amp; Wellness</span>
+      <a href="index.html" class="navbar__brand" aria-label="Susan Jarvie — Yoga Health and Wellness, home">
+        <img class="navbar__logo" src="images/logo-black.png" alt="Susan Jarvie — Yoga Health + Wellness" width="170" height="44">
       </a>
       <nav aria-label="Primary">
         <ul class="navbar__links">
@@ -62,29 +62,35 @@
           <span class="eyebrow">One-on-One</span>
           <h2 class="section-heading" data-field="private_heading">Private Yoga Sessions</h2>
           <div data-field="private_body"></div>
+
+          <h4 data-field="private_includes_heading" style="margin-top:1.5rem">Sessions include</h4>
+          <ul class="inline-list" style="margin-top:.75rem" data-list="private_includes">
+            <li data-template data-field=""></li>
+          </ul>
+
           <p class="price-tag" data-field="private_details" style="margin-top:1.25rem"></p>
-          <div class="btn-group" style="margin-top:1.25rem">
+          <div class="btn-group" style="margin-top:1rem">
             <a href="contact.html" class="btn btn-primary">Book a Session</a>
           </div>
         </div>
-        <div class="panel">
-          <h3 data-field="private_includes_heading">Sessions include</h3>
-          <ul data-list="private_includes">
-            <li data-template data-field=""></li>
-          </ul>
-        </div>
+        <img class="feature-img" src="images/susan-pool-yoga.png" alt="Susan guiding a seated meditation in a private session" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
 
   <!-- Group events -->
   <section class="section section--soft">
-    <div class="container measure-center">
-      <span class="eyebrow">Groups &amp; Events</span>
-      <h2 class="section-heading" data-field="events_heading">Group Events</h2>
-      <div data-field="events_body"></div>
-      <div class="btn-group" style="margin-top:1.5rem">
-        <a href="contact.html" class="btn btn-primary">Plan Your Event</a>
+    <div class="container">
+      <div class="band flip">
+        <div>
+          <span class="eyebrow">Groups &amp; Events</span>
+          <h2 class="section-heading" data-field="events_heading">Group Events</h2>
+          <div data-field="events_body"></div>
+          <div class="btn-group" style="margin-top:1.5rem">
+            <a href="contact.html" class="btn btn-primary">Plan Your Event</a>
+          </div>
+        </div>
+        <img class="feature-img feature-img--wide" src="images/pool-2.jpg" alt="Pool yoga session — Float Into Fitness" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
@@ -122,8 +128,7 @@
     <div class="container">
       <div class="footer__inner">
         <div>
-          <div class="footer__brand-name">Susan Jarvie</div>
-          <div class="footer__brand-sub">Yoga &amp; Wellness</div>
+          <img class="footer__logo" src="images/logo-white.png" alt="Susan Jarvie — Yoga Health + Wellness" width="190" height="52">
           <p>E-RYT500 registered yoga instructor and adjunct faculty at Mesa Community College. Teaching yoga since 2008.</p>
           <p style="margin-top:.5rem">Mesa, Arizona</p>
         </div>

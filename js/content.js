@@ -20,6 +20,9 @@ function injectFields(root, data) {
     if (data[key] == null) return;
     if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
       el.value = data[key];
+    } else if (el.tagName === 'IMG') {
+      el.src = data[key];
+      if (el.dataset.alt && data[el.dataset.alt]) el.alt = data[el.dataset.alt];
     } else if (el.tagName === 'A' && el.dataset.href) {
       el.href = data[el.dataset.href] || el.href;
       el.innerHTML = data[key];

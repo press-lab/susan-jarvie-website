@@ -8,8 +8,10 @@
   <meta name="theme-color" content="#455968">
   <meta property="og:title" content="Yoga with Susan Jarvie">
   <meta property="og:description" content="Weekly classes, private sessions, and online yoga in Mesa, Arizona.">
+  <meta property="og:image" content="images/hero-bg-1.jpg">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="images/hero-bg-1.jpg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,9 +20,8 @@
   <!-- Navigation -->
   <header class="navbar">
     <div class="container navbar__inner">
-      <a href="index.html" class="navbar__brand" aria-label="Susan Jarvie — Yoga and Wellness, home">
-        <span class="navbar__brand-name">Susan Jarvie</span>
-        <span class="navbar__brand-sub">Yoga &amp; Wellness</span>
+      <a href="index.html" class="navbar__brand" aria-label="Susan Jarvie — Yoga Health and Wellness, home">
+        <img class="navbar__logo" src="images/logo-black.png" alt="Susan Jarvie — Yoga Health + Wellness" width="170" height="44">
       </a>
       <nav aria-label="Primary">
         <ul class="navbar__links">
@@ -49,7 +50,8 @@
   <main id="main">
 
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero hero--photo">
+    <img class="hero__bg" src="images/hero-bg-1.jpg" alt="" fetchpriority="high" decoding="async">
     <div class="container hero__content">
       <span class="hero__eyebrow">Yoga with Susan Jarvie &middot; Mesa, Arizona</span>
       <h1 data-field="hero_tagline">Join me on your journey of yoga health + wellness</h1>
@@ -72,7 +74,7 @@
 
       <div class="cards" data-list="offerings">
         <article class="card" data-template>
-          <div class="card__accent"></div>
+          <img class="card__img" data-field="image" data-alt="image_alt" alt="" loading="lazy" decoding="async">
           <div class="card__body">
             <span class="eyebrow" data-field="eyebrow"></span>
             <h3 data-field="title"></h3>
@@ -84,14 +86,19 @@
     </div>
   </section>
 
-  <!-- About band (text-forward, no photo) -->
+  <!-- About band -->
   <section class="section section--soft">
-    <div class="container measure-center text-center">
-      <span class="eyebrow">About Susan</span>
-      <h2 class="section-heading" data-field="about_heading">You Matter</h2>
-      <p data-field="about_body"></p>
-      <div class="btn-group centered" style="margin-top:1.75rem">
-        <a href="about.html" class="btn btn-primary" data-field="about_cta_text" data-href="about_cta_url">Learn about Susan</a>
+    <div class="container">
+      <div class="band">
+        <div>
+          <span class="eyebrow">About Susan</span>
+          <h2 class="section-heading" data-field="about_heading">You Matter</h2>
+          <p data-field="about_body"></p>
+          <div class="btn-group" style="margin-top:1.75rem">
+            <a href="about.html" class="btn btn-primary" data-field="about_cta_text" data-href="about_cta_url">Learn about Susan</a>
+          </div>
+        </div>
+        <img class="feature-img" src="images/yoga-action-2.jpg" alt="Susan practicing yoga at sunset by the water" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
@@ -116,8 +123,7 @@
     <div class="container">
       <div class="footer__inner">
         <div>
-          <div class="footer__brand-name">Susan Jarvie</div>
-          <div class="footer__brand-sub">Yoga &amp; Wellness</div>
+          <img class="footer__logo" src="images/logo-white.png" alt="Susan Jarvie — Yoga Health + Wellness" width="190" height="52">
           <p>E-RYT500 registered yoga instructor and adjunct faculty at Mesa Community College. Teaching yoga since 2008.</p>
           <p style="margin-top:.5rem">Mesa, Arizona</p>
         </div>

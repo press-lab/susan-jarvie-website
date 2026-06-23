@@ -8,6 +8,7 @@
   <meta name="theme-color" content="#455968">
   <meta property="og:title" content="About · Yoga with Susan Jarvie">
   <meta property="og:description" content="E-RYT500 yoga instructor and Mesa Community College faculty.">
+  <meta property="og:image" content="images/susan-headshot.jpg">
   <meta property="og:type" content="profile">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
@@ -17,9 +18,8 @@
 
   <header class="navbar">
     <div class="container navbar__inner">
-      <a href="index.html" class="navbar__brand" aria-label="Susan Jarvie — Yoga and Wellness, home">
-        <span class="navbar__brand-name">Susan Jarvie</span>
-        <span class="navbar__brand-sub">Yoga &amp; Wellness</span>
+      <a href="index.html" class="navbar__brand" aria-label="Susan Jarvie — Yoga Health and Wellness, home">
+        <img class="navbar__logo" src="images/logo-black.png" alt="Susan Jarvie — Yoga Health + Wellness" width="170" height="44">
       </a>
       <nav aria-label="Primary">
         <ul class="navbar__links">
@@ -63,26 +63,35 @@
           <h2 class="section-heading" data-field="bio_heading">Join me on your yoga journey</h2>
           <div class="pull-quote"><p data-field="bio_tagline">you matter!</p></div>
           <div data-field="bio_body"></div>
-        </div>
-        <div class="panel">
-          <h3>Credentials</h3>
-          <div class="creds" data-list="credentials" style="margin-top:1rem">
+
+          <div class="creds" data-list="credentials">
             <div class="cred" data-template>
               <span class="cred__label" data-field="label"></span>
               <span class="cred__value" data-field="value"></span>
             </div>
           </div>
+
+          <div class="cred-badge">
+            <img class="badge-img" src="images/e-ryt-500-badge.jpg" alt="Yoga Alliance E-RYT 500 certification seal" width="82" height="82" loading="lazy">
+            <p>Registered with Yoga Alliance at the highest experienced-teacher level since 2006.</p>
+          </div>
         </div>
+        <img class="feature-img" src="images/susan-headshot.jpg" alt="Portrait of Susan Jarvie, yoga instructor in Mesa, Arizona" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
 
   <!-- Teaching approach -->
   <section class="section section--soft">
-    <div class="container measure-center">
-      <span class="eyebrow">Philosophy</span>
-      <h2 class="section-heading" data-field="teaching_heading">My Teaching Approach</h2>
-      <div data-field="teaching_body"></div>
+    <div class="container">
+      <div class="band flip">
+        <div>
+          <span class="eyebrow">Philosophy</span>
+          <h2 class="section-heading" data-field="teaching_heading">My Teaching Approach</h2>
+          <div data-field="teaching_body"></div>
+        </div>
+        <img class="feature-img feature-img--wide" src="images/yoga-action-1.jpg" alt="Susan holding a yoga pose at sunset" loading="lazy" decoding="async">
+      </div>
     </div>
   </section>
 
@@ -100,12 +109,27 @@
     </div>
   </section>
 
-  <!-- Travel (text only) -->
+  <!-- Travel gallery -->
   <section class="section section--soft">
-    <div class="container measure-center text-center">
-      <span class="eyebrow">Yoga Everywhere</span>
-      <h2 class="section-heading" data-field="travel_heading">Living My Yoga as I Travel</h2>
-      <p data-field="travel_body"></p>
+    <div class="container">
+      <div class="measure-center text-center">
+        <span class="eyebrow">Yoga Everywhere</span>
+        <h2 class="section-heading" data-field="travel_heading">Living My Yoga as I Travel</h2>
+        <p data-field="travel_body"></p>
+      </div>
+      <div class="gallery">
+        <figure><img src="images/travel-05.jpg" alt="Yoga pose in front of the pyramids in Egypt" loading="lazy" decoding="async"><figcaption>Egypt</figcaption></figure>
+        <figure><img src="images/travel-09.jpg" alt="Yoga pose before the Grand Teton mountains" loading="lazy" decoding="async"><figcaption>Grand Tetons</figcaption></figure>
+        <figure><img src="images/travel-10.jpg" alt="Tree pose on the Great Wall of China" loading="lazy" decoding="async"><figcaption>Great Wall, China</figcaption></figure>
+        <figure><img src="images/travel-11.jpg" alt="Tree pose on a tropical beach in Fiji" loading="lazy" decoding="async"><figcaption>Fiji</figcaption></figure>
+        <figure><img src="images/travel-06.jpg" alt="Headstand on a beach in Fiji" loading="lazy" decoding="async"><figcaption>Fiji</figcaption></figure>
+        <figure><img src="images/travel-01.jpg" alt="Seated meditation at sunset by the water" loading="lazy" decoding="async"><figcaption>Sunset practice</figcaption></figure>
+        <figure><img src="images/travel-08.jpg" alt="Warrior pose silhouette at sunset" loading="lazy" decoding="async"><figcaption>Sunset practice</figcaption></figure>
+        <figure><img src="images/travel-04.jpg" alt="Seated yoga silhouette at sunset" loading="lazy" decoding="async"><figcaption>Sunset practice</figcaption></figure>
+        <figure><img src="images/travel-03.jpg" alt="Hand cupping the setting sun" loading="lazy" decoding="async"><figcaption>Sunset practice</figcaption></figure>
+        <figure><img src="images/travel-07.jpg" alt="Seated meditation silhouette at sunset" loading="lazy" decoding="async"><figcaption>Sunset practice</figcaption></figure>
+      </div>
+      <p class="photo-credit text-center">Photography by April Yarger &amp; Liz Ansley.</p>
     </div>
   </section>
 
@@ -127,8 +151,7 @@
     <div class="container">
       <div class="footer__inner">
         <div>
-          <div class="footer__brand-name">Susan Jarvie</div>
-          <div class="footer__brand-sub">Yoga &amp; Wellness</div>
+          <img class="footer__logo" src="images/logo-white.png" alt="Susan Jarvie — Yoga Health + Wellness" width="190" height="52">
           <p>E-RYT500 registered yoga instructor and adjunct faculty at Mesa Community College. Teaching yoga since 2008.</p>
           <p style="margin-top:.5rem">Mesa, Arizona</p>
         </div>

@@ -343,3 +343,43 @@ strong { color: var(--ink); font-weight: 600; }
 .divider { border: none; border-top: 1px solid var(--border); margin-block: 2rem; }
 .price-tag { display: inline-block; background: var(--slate-pale); color: var(--slate-dark); border-radius: var(--radius); padding: .6rem 1rem; font-size: .85rem; margin: .75rem 0; }
 .price-tag strong { color: var(--slate-dark); }
+
+/* ── Imagery ───────────────────────────────────────────────────── */
+.navbar__logo { height: 44px; width: auto; display: block; }
+@media (max-width: 480px) { .navbar__logo { height: 36px; } }
+.footer__logo { height: 52px; width: auto; margin-bottom: 1rem; }
+
+/* Hero with photo background + slate overlay (mirrors original, keeps text contrast) */
+.hero--photo { background: var(--slate-darker); }
+.hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; z-index: 0; }
+.hero--photo::before {
+  content: ''; position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(150deg, rgba(49,63,73,.80) 0%, rgba(40,51,59,.88) 100%);
+}
+.hero--photo .hero__content { position: relative; z-index: 2; }
+
+/* Feature images inside text bands */
+.feature-img { width: 100%; display: block; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow-lg); aspect-ratio: 4/5; }
+.feature-img--wide { aspect-ratio: 3/2; }
+
+/* Card images (offering cards) */
+.card__img { width: 100%; display: block; aspect-ratio: 16/10; object-fit: cover; }
+
+/* Credential badge row */
+.cred-badge { display: flex; align-items: center; gap: 1.25rem; margin-top: 1.75rem; }
+.badge-img { width: 82px; height: auto; display: block; flex-shrink: 0; }
+.cred-badge p { font-size: .85rem; color: var(--body); margin: 0; }
+
+/* Travel gallery */
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .75rem; margin-top: 2.5rem; }
+.gallery figure { margin: 0; overflow: hidden; border-radius: var(--radius); position: relative; }
+.gallery img { width: 100%; height: 100%; display: block; aspect-ratio: 1/1; object-fit: cover; transition: transform var(--transition); }
+.gallery figure:hover img { transform: scale(1.06); }
+.gallery figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: .9rem .75rem .55rem;
+  font-size: .72rem; font-weight: 600; letter-spacing: .04em; color: #fff; text-align: left;
+  background: linear-gradient(transparent, rgba(40,51,59,.85)); opacity: 0; transition: opacity var(--transition);
+}
+.gallery figure:hover figcaption { opacity: 1; }
+@media (hover: none) { .gallery figcaption { opacity: 1; } }
+.photo-credit { font-size: .78rem; color: var(--muted); margin-top: 1rem; font-style: italic; }
